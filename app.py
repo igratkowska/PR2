@@ -41,7 +41,6 @@ app = dash.Dash(__name__)
 
 app.layout = html.Div([
     html.H2("Situació dels drets de les dones i la felicitat al món"),
-    html.P("Human Freedom Index i del World Happiness Report"), 
     html.Div([
         html.Label("La mida de les bombolles representa el PIB per càpita: com més gran la bombolla, més alt el PIB del país."),
         dcc.RadioItems(
