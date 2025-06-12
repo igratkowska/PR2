@@ -40,17 +40,7 @@ combined_10 = combined_10.sort_values(by='year')
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    html.H2("Situació dels drets de les dones al món"),
-    html.P("""
-        Aquesta visualització explora si hi ha una relació entre la llibertat de les dones i la felicitat d’un país.
-        A partir de dades del Human Freedom Index i del World Happiness Report entre 2012 i 2022, s’analitza 
-        com la llibertat personal, especialment la de les dones, pot influir en el benestar global. La mesura de 
-        llibertat personal específica per a les dones, es basa en cinc indicadors internacionals: llibertat de moviment, 
-        relacions entre dones, drets de divorci, drets d’herència i mutilació genital femenina. Aquests indicadors proporcionen
-        una visió valuosa sobre la igualtat i els drets de les dones a nivell mundial. En analitzar l'evolució al llarg del temps
-        o el canvi acumulat en una dècada, podem observar tendències i diferències significatives entre regions.
-    """, style={'maxWidth': '1000px', 'margin': 'auto', 'padding': '10px', 'fontSize': '16px'}),
-])
+    html.H2("Situació dels drets de les dones i felicitat al món"),
     html.Div([
         html.Label("La mida de les bombolles representa el PIB per càpita: com més gran la bombolla, més alt el PIB del país."),
         dcc.RadioItems(
