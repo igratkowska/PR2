@@ -42,7 +42,7 @@ app.layout = html.Div([
     html.H2("La llibertat de les dones fa que el país sigui més feliç?"),
    
     html.Div([
-        html.Label("Selecciona gràfic:"),
+        html.Label("Grandària dels punts indica el PIB per càpita del país."),
         dcc.RadioItems(
             id='mode',
             options=[
@@ -113,20 +113,6 @@ def update_graph(mode):
 
         
         fig.update_layout(title="Llibertat personal de dones vs Felicitat del país",
-                        annotations=[
-                            dict(
-                                text="Grandària dels punts:<br> PIB per càpita del país<br>",
-                                x=1.25,
-                                y=-0.2, 
-                                xref='paper',
-                                yref='paper',
-                                showarrow=False,
-                                bordercolor="black",
-                                borderwidth=1,
-                                borderpad=4
-                            )
-                        ],
-                          margin=dict(l=40, r=40, t=60, b=40),
                           xaxis_title="Llibertat dones",
                           yaxis_title="Felicitat",
                           legend_title_text=None,
@@ -196,21 +182,7 @@ def update_graph(mode):
         )
 
         fig.update_layout(
-                        annotations=[
-                            dict(
-                                text="Grandària dels punts:<br> PIB per càpita del país<br>",
-                                x=1.2,
-                                y=0.02, 
-                                xref='paper',
-                                yref='paper',
-                                showarrow=False,
-                                bordercolor="black",
-                                borderwidth=1,
-                                borderpad=4,
-                                bgcolor=None,
-                                font=dict(color="black")
-                            )
-                        ],margin=dict(l=40, r=40, t=60, b=40),xaxis_title="Llibertat dones", 
+                          xaxis_title="Llibertat dones", 
                           yaxis_title="Felicitat",
                           paper_bgcolor='white',
                           plot_bgcolor='white',
