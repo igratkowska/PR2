@@ -42,7 +42,7 @@ app.layout = html.Div([
     html.H2("La llibertat de les dones fa que el país sigui més feliç?"),
    
     html.Div([
-        html.Label("La grandària de les bombolles indica el PIB per càpita del país. Com més gran és la bombolla, més gran és el PIB del país "),
+        html.Label("La grandària de les bombolles indica el PIB per càpita del país. Com més gran és la bombolla, més gran és el PIB del país."),
         dcc.RadioItems(
             id='mode',
             options=[
