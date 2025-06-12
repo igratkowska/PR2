@@ -1,4 +1,4 @@
-Instal·lar les dependències:
+Per executar la visualització en un servidor web local:
 
 git clone https://github.com/igratkowska/PR2.git
 
@@ -10,6 +10,5 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-Executar l’aplicació:
 
 python app.py
