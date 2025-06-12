@@ -9,24 +9,25 @@ from sklearn.preprocessing import MinMaxScaler
 combined_10 = pd.read_csv('bubblechart_slider.csv')
 df_2022 = pd.read_csv('bubblechart_change.csv')
 
+
 color_map = {
-    "Sub-Saharan Africa": "#E69F00",        # taronja
-    "Eastern Europe": "#56B4E9",            # blau clar
-    "Latin America & the Caribbean": "#009E73",  # verd fosc
-    "Western Europe": "#F0E442",            # groc
-    "South Asia": "#0072B2",               # blau fosc
-    "Middle East & North Africa": "#D55E00", # vermell fosc
-    "Caucasus & Central Asia": "#CC79A7",   # magenta
-    "East Asia": "#999999",                # gris
-    "North America": "#882255",            # verd oliva
-    "Oceania": "#117733",                  # vermell porpra
+    "Sub-Saharan Africa": "#E69F00",        
+    "Eastern Europe": "#56B4E9",            
+    "Latin America & the Caribbean": "#009E73",  
+    "Western Europe": "#F0E442",            
+    "South Asia": "#0072B2",               
+    "Middle East & North Africa": "#D55E00", 
+    "Caucasus & Central Asia": "#CC79A7",  
+    "East Asia": "#999999",                
+    "North America": "#882255",            
+    "Oceania": "#117733",                 
 }
 
 quartile_color_map = {
-    "Q1: més llibertat": "#2C7BB6",   # verd oliva (positiu)
-    "Q2": "#ABD9E9",                  # blau clar
-    "Q3": "#FDAE61",                  # taronja
-    "Q4: menys llibertat": "#D7191C"  # taronja (negatiu)
+    "Q1: més llibertat": "#2C7BB6",   
+    "Q2": "#ABD9E9",                  
+    "Q3": "#FDAE61",                  
+    "Q4: menys llibertat": "#D7191C"  
 }
 
 scaler_combined = MinMaxScaler()
@@ -56,8 +57,6 @@ app.layout = html.Div([
 
     dcc.Graph(id='bubble_chart')
 ])
-
-
 
 @app.callback(
     Output('bubble_chart', 'figure'),
@@ -121,8 +120,6 @@ def update_graph(mode):
                           xaxis=dict(showgrid=False),
                           yaxis=dict(showgrid=False),
                           transition_duration=1000)
-
-
     else:
         fig = px.scatter(
             df_2022,
