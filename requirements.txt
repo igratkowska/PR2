@@ -1,6 +1,4 @@
 dash
 pandas
 plotly
-plotly.express
-plotly.graph_objects
 sklearn.preprocessing
