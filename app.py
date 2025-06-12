@@ -111,7 +111,7 @@ def update_graph(mode):
                 )
 
         
-        fig.update_layout(title="Llibertat personal de dones vs Felicitat del país",
+        fig.update_layout(title="Llibertat personal de les dones vs Felicitat del país",
                           xaxis_title="Llibertat dones",
                           yaxis_title="Felicitat",
                           legend_title_text=None,
