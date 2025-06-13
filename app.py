@@ -41,7 +41,7 @@ app = dash.Dash(__name__)
 
 app.layout = html.Div([
     html.H2("Situació dels drets de les dones i la felicitat al món"),
-    html.H5("Aquesta visualització explora com la llibertat personal de les dones varia segons la regió, a partir de cinc indicadors clau relacionats amb drets i condicions específiques. Aquests drets es projecten juntament amb el nivell de la felicitat dels països, mostrant possibles connexions entre l'igualtat i el benestar."),
+html.H5("A partir de dades del Human Freedom Index i del World Happiness Report entre 2012 i 2022, aquesta visualització explora com la llibertat personal de les dones varia segons la regió, a partir de cinc indicadors clau relacionats amb drets i condicions específiques. Aquests drets es projecten juntament amb el nivell de la felicitat dels països, mostrant possibles connexions entre l'igualtat i el benestar. En analitzar l'evolució al llarg del temps o el canvi acumulat en una dècada, podem observar tendències i diferències significatives entre regions."),
     html.Div([
         html.Label("La mida de les bombolles representa el PIB per càpita: com més gran la bombolla, més alt el PIB del país."),
         dcc.RadioItems(
