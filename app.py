@@ -175,7 +175,7 @@ def update_graph(mode):
             ax=-40,
             ay=100,  
             bgcolor="#ffffb2",
-            font=dict(color="white")
+            font=dict(color="grey")
         )
 
         fig.update_layout(
