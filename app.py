@@ -11,23 +11,23 @@ df_2022 = pd.read_csv('bubblechart_change.csv')
 
 
 color_map = {
-    "Sub-Saharan Africa": "#E69F00",        
-    "Eastern Europe": "#56B4E9",            
-    "Latin America & the Caribbean": "#009E73",  
-    "Western Europe": "#F0E442",            
-    "South Asia": "#0072B2",               
-    "Middle East & North Africa": "#D55E00", 
-    "Caucasus & Central Asia": "#CC79A7",  
-    "East Asia": "#999999",                
-    "North America": "#882255",            
-    "Oceania": "#117733",                 
+    "Sub-Saharan Africa": "#8dd3c7",        
+    "Eastern Europe": "#ffffb3",            
+    "Latin America & the Caribbean": "#bebada",  
+    "Western Europe": "#fb8072",            
+    "South Asia": "#80b1d3",               
+    "Middle East & North Africa": "#fdb462", 
+    "Caucasus & Central Asia": "#b3de69",  
+    "East Asia": "#fccde5",                
+    "North America": "#d9d9d9",            
+    "Oceania": "#bc80bd",                 
 }
 
 quartile_color_map = {
-    "Q1: més llibertat": "#2C7BB6",   
-    "Q2": "#ABD9E9",                  
-    "Q3": "#FDAE61",                  
-    "Q4: menys llibertat": "#D7191C"  
+    "Q1: més llibertat": "#fef0d9",   
+    "Q2": "#fdcc8a",                  
+    "Q3": "#fc8d59",                  
+    "Q4: menys llibertat": "#d7301f"  
 }
 
 scaler_combined = MinMaxScaler()
@@ -163,7 +163,7 @@ def update_graph(mode):
             arrowhead=2,
             ax=0,
             ay=-50,
-            bgcolor="#D7191C",
+            bgcolor="#d7301f",
             font=dict(color="white")
         )
         fig.add_annotation(
@@ -174,7 +174,7 @@ def update_graph(mode):
             arrowhead=2,
             ax=-40,
             ay=100,  
-            bgcolor="#2C7BB6",
+            bgcolor="#fef0d9",
             font=dict(color="white")
         )
 
